@@ -78,22 +78,23 @@ No extra installation is required — all packages are preinstalled in the Kaggl
 3. Run all cells sequentially:
    - Click **"Run All"** or execute each cell using `Shift + Enter`. 
 
+The following table summarizes the hyperparameters used in the model, with default values for both **with** and **without** attention mechanisms.
 
+|         Name          | Default_Values-Without Attention | Default_Values-With Attention | Description                                                      |
+|:---------------------:|:-----------------:|:--------------:|:-----------------------------------------------------------------|
+|    `embSize`          |        64         |       64       | Embedding size dimension used in the encoder and decoder         |
+|  `encoderLayers`      |         3         |        3       | Number of layers in the encoder                                  |
+|  `decoderLayers`      |         3         |        3       | Number of layers in the decoder                                  |
+| `hiddenLayerNuerons`  |       256         |      256       | Number of neurons in each hidden layer of encoder/decoder        |
+|     `cellType`        |      `'GRU'`      |    `'GRU'`     | Type of RNN cell used: choices are `GRU`, `RNN`, or `LSTM`       |
+|    `bidirection`      |      `'no'`       |    `'no'`      | Use bidirectional RNN encoder? Options: `'no'` or `'Yes'`        |
+|      `dropout`        |       0.2         |      0.2       | Dropout rate applied to RNN layers                               |
+|       `epochs`        |        20         |       20       | Number of training epochs                                        |
+|     `batchsize`       |        64         |       64       | Batch size during training                                       |
+|    `learningRate`     |      0.001        |     0.001      | Learning rate for optimizer                                      |
+|     `optimizer`       |     `'Adam'`      |   `'Adam'`     | Optimizer choice: `'Adam'` or `'Nadam'`                         |
+|      `tf_ratio`       |       0.5         |      0.5       | Teacher forcing ratio during decoder training                    |
 
-|         Name          |   Default Value   | Description                                                      |
-| :-------------------: | :---------------: | :---------------------------------------------------------------|
-|    `embSize`          |       64          | Embedding size dimension used in the encoder and decoder        |
-|  `encoderLayers`      |        3          | Number of layers in the encoder                                  |
-|  `decoderLayers`      |        3          | Number of layers in the decoder                                  |
-| `hiddenLayerNuerons`  |       256         | Number of neurons in each hidden layer of encoder/decoder       |
-|     `cellType`        |      'GRU'        | Type of RNN cell used: choices are `GRU`, `RNN`, or `LSTM`       |
-|    `bidirection`      |      'no'         | Use bidirectional RNN encoder? Options: `'no'` or `'Yes'`        |
-|      `dropout`        |       0.2         | Dropout rate applied to RNN layers                               |
-|       `epochs`        |       20          | Number of training epochs                                        |
-|     `batchsize`       |       64          | Batch size during training                                       |
-|    `learningRate`     |      0.001        | Learning rate for optimizer                                      |
-|     `optimizer`       |     'Adam'        | Optimizer choice: `'Adam'` or `'Nadam'`                         |
-|      `tf_ratio`       |       0.5         | Teacher forcing ratio during decoder training                   |
 
 ---
 
