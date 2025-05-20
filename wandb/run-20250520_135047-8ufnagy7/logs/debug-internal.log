@@ -1,0 +1,16 @@
+{"time":"2025-05-20T13:50:47.911730878+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/home/kanchan/Downloads/Courses/DL_DA6401/CS23S025-Assignment-3_DA6401-DL/wandb/run-20250520_135047-8ufnagy7/logs/debug-core.log"}
+{"time":"2025-05-20T13:50:48.279047942+05:30","level":"INFO","msg":"created new stream","id":"8ufnagy7"}
+{"time":"2025-05-20T13:50:48.279087962+05:30","level":"INFO","msg":"stream: started","id":"8ufnagy7"}
+{"time":"2025-05-20T13:50:48.279134827+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"8ufnagy7"}
+{"time":"2025-05-20T13:50:48.279165837+05:30","level":"INFO","msg":"sender: started","stream_id":"8ufnagy7"}
+{"time":"2025-05-20T13:50:48.279203482+05:30","level":"INFO","msg":"handler: started","stream_id":"8ufnagy7"}
+{"time":"2025-05-20T13:50:48.663721601+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-20T13:50:49.776079039+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-20T13:50:49.776146996+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-20T13:50:50.778835817+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-8ufnagy7-VanillaTransliteration","runtime_seconds":1.4089543500000001,"subtasks":[{"desc":"Vanilla Transliteration .table.json","runtime_seconds":0.307723449,"progress":"6.1KB/6.1KB"}]}],"total_operations":1}}
+{"time":"2025-05-20T13:50:51.961708065+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-20T13:50:52.335541891+05:30","level":"INFO","msg":"stream: closing","id":"8ufnagy7"}
+{"time":"2025-05-20T13:50:52.335562914+05:30","level":"INFO","msg":"handler: closed","stream_id":"8ufnagy7"}
+{"time":"2025-05-20T13:50:52.335593854+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"8ufnagy7"}
+{"time":"2025-05-20T13:50:52.335605797+05:30","level":"INFO","msg":"sender: closed","stream_id":"8ufnagy7"}
+{"time":"2025-05-20T13:50:52.335659157+05:30","level":"INFO","msg":"stream: closed","id":"8ufnagy7"}
