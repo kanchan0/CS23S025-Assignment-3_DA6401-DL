@@ -83,16 +83,16 @@ The following table summarizes the hyperparameters used in the model, with defau
 |         Name          | Default_Values-Without Attention | Default_Values-With Attention | Description                                                      |
 |:---------------------:|:-----------------:|:--------------:|:-----------------------------------------------------------------|
 |    `embSize`          |        64         |       64       | Embedding size dimension used in the encoder and decoder         |
-|  `encoderLayers`      |         3         |        3       | Number of layers in the encoder                                  |
-|  `decoderLayers`      |         3         |        3       | Number of layers in the decoder                                  |
-| `hiddenLayerNuerons`  |       256         |      256       | Number of neurons in each hidden layer of encoder/decoder        |
-|     `cellType`        |      `'GRU'`      |    `'GRU'`     | Type of RNN cell used: choices are `GRU`, `RNN`, or `LSTM`       |
+|  `encoderLayers`      |         1         |        1       | Number of layers in the encoder                                  |
+|  `decoderLayers`      |         1         |        1       | Number of layers in the decoder                                  |
+| `hiddenLayerNuerons`  |       512         |      512       | Number of neurons in each hidden layer of encoder/decoder        |
+|     `cellType`        |      `'LSTM'`      |    `'GRU'`     | Type of RNN cell used: choices are `GRU`, `RNN`, or `LSTM`       |
 |    `bidirection`      |      `'no'`       |    `'no'`      | Use bidirectional RNN encoder? Options: `'no'` or `'Yes'`        |
 |      `dropout`        |       0.2         |      0.2       | Dropout rate applied to RNN layers                               |
-|       `epochs`        |        20         |       20       | Number of training epochs                                        |
+|       `epochs`        |        15         |       15       | Number of training epochs                                        |
 |     `batchsize`       |        64         |       64       | Batch size during training                                       |
 |    `learningRate`     |      0.001        |     0.001      | Learning rate for optimizer                                      |
-|     `optimizer`       |     `'Adam'`      |   `'Adam'`     | Optimizer choice: `'Adam'` or `'Nadam'`                         |
+|     `optimizer`       |     `'NAdam'`      |   `'Adam'`     | Optimizer choice: `'Adam'` or `'Nadam'`                         |
 |      `tf_ratio`       |       0.5         |      0.5       | Teacher forcing ratio during decoder training                    |
 
 
