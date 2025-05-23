@@ -107,7 +107,7 @@ The following table summarizes the hyperparameters used in the model, with defau
 |     `val_csv`       | `./DakshinaDataSet_Hindi/hindi_Validation_dataset.csv` | Path to validation dataset CSV   |
 
 
-## Running dotpyFiles which are in folder dotpyfiles
+# Running dotpyFiles which are in folder dotpyfiles
 
 - `Attention_main.py`: Main script to train the model, accepts all training parameters via command-line arguments.
 - `Attention_model_util.py`: Contains model definitions, dataset, tokenizer, and attention module.
