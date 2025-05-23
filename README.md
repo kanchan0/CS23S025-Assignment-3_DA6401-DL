@@ -105,3 +105,21 @@ The following table summarizes the hyperparameters used in the model, with defau
 |    `train_csv`      | `/kaggle/input/dakshina-dataset-hindi/DakshinaDataSet_Hindi/hindi_Train_dataset.csv` | Path to training dataset CSV     |
 |     `test_csv`      | `/kaggle/input/dakshina-dataset-hindi/DakshinaDataSet_Hindi/hindi_Test_dataset.csv`  | Path to test dataset CSV         |
 |     `val_csv`       | `/kaggle/input/dakshina-dataset-hindi/DakshinaDataSet_Hindi/hindi_Validation_dataset.csv` | Path to validation dataset CSV   |
+
+
+## Running dotpyFiles which are in folder dotpyfiles
+
+- `Attention_main.py`: Main script to train the model, accepts all training parameters via command-line arguments.
+- `Attention_model_util.py`: Contains model definitions, dataset, tokenizer, and attention module.
+
+
+## Requirements
+
+- Python 3.7+
+- PyTorch
+- pandas
+- wandb
+
+Install dependencies:
+```bash
+pip install torch pandas wandb
