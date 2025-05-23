@@ -122,5 +122,39 @@ The following table summarizes the hyperparameters used in the model, with defau
 - wandb
 
 Install dependencies:
+
+```pip install torch pandas wandb```
+
+
+This script trains a deep learning model using input/output pairs provided in CSV files. It supports experiment tracking via Weights & Biases (wandb) and allows customization of key hyperparameters through command-line arguments.
+
+---
+
+| Argument          | Type   | Required | Default        | Description                                                                                   |
+|-------------------|--------|----------|----------------|-----------------------------------------------------------------------------------------------|
+| `--train_csv`     | string | Yes      | —              | Path to the CSV file containing training data. Each row should have input and output pairs.  |
+| `--val_csv`       | string | Yes      | —              | Path to the CSV file containing validation data.                                             |
+| `--test_csv`      | string | Yes      | —              | Path to the CSV file containing test data.                                                   |
+| `--wandb_project` | string | No       | `"assignment3"`| Weights & Biases project name for experiment tracking.                                       |
+| `--epochs`        | int    | No       | `20`           | Number of training epochs.                                                                    |
+| `--batch_size`    | int    | No       | `64`           | Mini-batch size for training.                                                                 |
+| `--learning_rate` | float  | No       | `0.001`        | Learning rate for the optimizer.                                                              |
+| `--embedding_dim` | int    | No       | `256`          | Dimensionality of input embeddings.                                                          |
+| `--hidden_size`   | int    | No       | `512`          | Number of hidden units in each model layer.                                                  |
+| `--num_layers`    | int    | No       | `2`            | Number of layers in the model architecture.                                                  |
+| `--dropout`       | float  | No       | `0.1`          | Dropout probability used for regularization.                                                 |
+| `--beam_size`     | int    | No       | `3`            | Beam size used during decoding (if applicable).                                              |
+
+---
+
+
 ```bash
-pip install torch pandas wandb
+python train.py \
+  --train_csv data/train.csv \
+  --val_csv data/val.csv \
+  --test_csv data/test.csv \
+  --epochs 30 \
+  --batch_size 128 \
+  --learning_rate 0.0005 \
+  --wandb_project "my_experiment"
+
