@@ -102,9 +102,9 @@ The following table summarizes the hyperparameters used in the model, with defau
 
 |      Variable       |                                   Path                                   | Description                      |
 | :-----------------: | :----------------------------------------------------------------------: | :-------------------------------|
-|    `train_csv`      | `/kaggle/input/dakshina-dataset-hindi/DakshinaDataSet_Hindi/hindi_Train_dataset.csv` | Path to training dataset CSV     |
-|     `test_csv`      | `/kaggle/input/dakshina-dataset-hindi/DakshinaDataSet_Hindi/hindi_Test_dataset.csv`  | Path to test dataset CSV         |
-|     `val_csv`       | `/kaggle/input/dakshina-dataset-hindi/DakshinaDataSet_Hindi/hindi_Validation_dataset.csv` | Path to validation dataset CSV   |
+|    `train_csv`      | `./DakshinaDataSet_Hindi/hindi_Train_dataset.csv` | Path to training dataset CSV     |
+|     `test_csv`      | `./DakshinaDataSet_Hindi/hindi_Test_dataset.csv`  | Path to test dataset CSV         |
+|     `val_csv`       | `./DakshinaDataSet_Hindi/hindi_Validation_dataset.csv` | Path to validation dataset CSV   |
 
 
 ## Running dotpyFiles which are in folder dotpyfiles
