@@ -111,7 +111,8 @@ The following table summarizes the hyperparameters used in the model, with defau
 
 - `Attention_main.py`: Main script to train the model, accepts all training parameters via command-line arguments.
 - `Attention_model_util.py`: Contains model definitions, dataset, tokenizer, and attention module.
-
+- `withoutAttention_main.py`: Main script to train the model, accepts all training parameters via command-line arguments.
+- `withoutAttention_model_util.py`: Contains model definitions, dataset, tokenizer, and attention module.
 
 ## Requirements
 
